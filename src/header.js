@@ -25,23 +25,25 @@ export default function Top() {
 
   return (
     <>
-      <Div100vh id={styles.header}>
-        {countdown > 0 ? (
-          <p className={styles.kanjiNumbers}>{kanjiNumbers[countdown]}</p>
-        ) : (
-          <div className={styles.fadeIn}>
-            <div className={styles.nameContainer}>
-              <p className={styles.nameKanji}>脩&nbsp;眞</p>
-              <p className={styles.nameRoman}>shuma.</p>
-              <p className={styles.birthday}>(327)</p>
+      <Div100vh>
+        <div id={styles.header}>
+          {countdown > 0 ? (
+            <p className={styles.kanjiNumbers}>{kanjiNumbers[countdown]}</p>
+          ) : (
+            <div className={styles.fadeIn}>
+              <div className={styles.nameContainer}>
+                <p className={styles.nameKanji}>脩&nbsp;眞</p>
+                <p className={styles.nameRoman}>shuma.</p>
+                <p className={styles.birthday}>(327)</p>
+              </div>
+              <svg class={styles.arrows}>
+                <path class={styles.a1} d="M0 0 L30 32 L60 0" />
+                <path class={styles.a2} d="M0 20 L30 52 L60 20" />
+                <path class={styles.a3} d="M0 40 L30 72 L60 40" />
+              </svg>
             </div>
-            <svg class={styles.arrows}>
-              <path class={styles.a1} d="M0 0 L30 32 L60 0" />
-              <path class={styles.a2} d="M0 20 L30 52 L60 20" />
-              <path class={styles.a3} d="M0 40 L30 72 L60 40" />
-            </svg>
-          </div>
-        )}
+          )}
+        </div>
       </Div100vh>
     </>
   )
