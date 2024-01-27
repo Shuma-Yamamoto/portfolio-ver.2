@@ -14,6 +14,15 @@ export default function Top() {
     return () => clearInterval(countdownInterval);
   }, []);
 
+  useEffect(() => {
+    const createLine = (position) => {
+      const line = document.createElement('div');
+      line.className = styles['line' + position];
+      document.body.appendChild(line);
+    };
+    ['Top', 'Bottom', 'Right', 'Left'].forEach(createLine);
+  }, []);
+
   return (
     <>
       {/* <Div100vh> */}

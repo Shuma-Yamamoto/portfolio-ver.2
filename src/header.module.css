@@ -42,7 +42,7 @@
   height: 2px;
   position: fixed;
   background-color: white;
-  animation: expandHorizontal 5s linear forwards;
+  animation: expandHorizontal 5s linear;
 }
 
 .lineBottom {
@@ -52,7 +52,7 @@
   height: 2px;
   position: fixed;
   background-color: white;
-  animation: expandHorizontal 5s linear forwards;
+  animation: expandHorizontal 5s linear;
 }
 
 .lineRight {
@@ -62,7 +62,7 @@
   height: 0;
   position: fixed;
   background-color: white;
-  animation: expandVertical 5s linear forwards;
+  animation: expandVertical 5s linear;
 }
 
 .lineLeft {
@@ -72,7 +72,7 @@
   height: 0;
   position: fixed;
   background-color: white;
-  animation: expandVertical 5s linear forwards;
+  animation: expandVertical 5s linear;
 }
 
 @keyframes expandHorizontal {
@@ -92,7 +92,7 @@
 /* 白線 */
 .border {
   border: 2px solid #fff;
-  position: fixed;
+  position: absolute;
   top: 2%;
   bottom: 2%;
   right: 1%;
