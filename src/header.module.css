@@ -41,7 +41,7 @@
   height: 2px;
   position: fixed;
   background-color: white;
-  animation: expandHorizontal 5s linear forwards;
+  animation: expandHorizontal 5s linear;
 }
 
 .lineBottom {
@@ -51,7 +51,7 @@
   height: 2px;
   position: fixed;
   background-color: white;
-  animation: expandHorizontal 5s linear forwards;
+  animation: expandHorizontal 5s linear;
 }
 
 .lineRight {
@@ -61,7 +61,7 @@
   height: 0;
   position: fixed;
   background-color: white;
-  animation: expandVertical 5s linear forwards;
+  animation: expandVertical 5s linear;
 }
 
 .lineLeft {
@@ -71,7 +71,7 @@
   height: 0;
   position: fixed;
   background-color: white;
-  animation: expandVertical 5s linear forwards;
+  animation: expandVertical 5s linear;
 }
 
 @keyframes expandHorizontal {
@@ -88,9 +88,19 @@
 
 /* ==================== 画面読み込み後 =================== */
 
+/* 白線 */
+.border {
+  border: 2px solid #fff;
+  position: fixed;
+  top: 2%;
+  bottom: 2%;
+  right: 1%;
+  left: 1%;
+}
+
 /* フェードイン */
 .fadeIn {
-  animation: fadeIn 1.5s ease-in forwards;
+  animation: fadeIn 1.5s ease-in;
 }
 
 @keyframes fadeIn {
@@ -234,6 +244,12 @@
     to {
       height: 98%;
     }
+  }
+  .border {
+    top: 1%;
+    bottom: 1%;
+    right: 1.5%;
+    left: 1.5%;
   }
   .nameKanji {
     font-size: 40px;
