@@ -42,7 +42,7 @@
   height: 2px;
   position: fixed;
   background-color: white;
-  animation: expandHorizontal 5s linear;
+  animation: expandHorizontal 5s linear forwards;
 }
 
 .lineBottom {
@@ -52,7 +52,7 @@
   height: 2px;
   position: fixed;
   background-color: white;
-  animation: expandHorizontal 5s linear;
+  animation: expandHorizontal 5s linear forwards;
 }
 
 .lineRight {
@@ -62,7 +62,7 @@
   height: 0;
   position: fixed;
   background-color: white;
-  animation: expandVertical 5s linear;
+  animation: expandVertical 5s linear forwards;
 }
 
 .lineLeft {
@@ -72,7 +72,7 @@
   height: 0;
   position: fixed;
   background-color: white;
-  animation: expandVertical 5s linear;
+  animation: expandVertical 5s linear forwards;
 }
 
 @keyframes expandHorizontal {
@@ -115,7 +115,7 @@
 
 /* 名前, name, 誕生日 */
 .nameContainer {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
@@ -180,18 +180,18 @@
 }
 
 .arrows path.a1 {
-  animation-delay:-1s;
-  -webkit-animation-delay:-1s;
+  animation-delay: -1s;
+  -webkit-animation-delay :-1s;
 }
 
 .arrows path.a2 {
-  animation-delay:-0.5s;
-  -webkit-animation-delay:-0.5s;
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
 }
 
 .arrows path.a3 {
-  animation-delay:0s;
-  -webkit-animation-delay:0s;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
 }
 
 /* ==================== レスポンシブ対応 =================== */

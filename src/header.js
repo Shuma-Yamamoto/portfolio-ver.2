@@ -26,11 +26,12 @@ export default function Top() {
   return (
     <>
       {/* <Div100vh> */}
-        <div id={styles.header}>
+        <header id={styles.header}>
           {countdown > 0 ? (
             <p className={styles.kanjiNumbers}>{kanjiNumbers[countdown]}</p>
           ) : (
-            <div className={styles.border}>
+            <>
+              <div className={styles.border} />
               <div className={styles.fadeIn}>
                 <div className={styles.nameContainer}>
                   <p className={styles.nameKanji}>脩&nbsp;眞</p>
@@ -43,9 +44,9 @@ export default function Top() {
                   <path class={styles.a3} d="M0 40 L30 72 L60 40" />
                 </svg>
               </div>
-            </div>
+            </>
           )}
-        </div>
+        </header>
       {/* </Div100vh> */}
     </>
   )
