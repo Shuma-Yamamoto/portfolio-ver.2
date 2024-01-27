@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Div100vh from 'react-div-100vh'
 import styles from './header.module.css';
 
-export default function Top() {
+export default function Header() {
   const kanjiNumbers = ['', '壹', '貮', '參', '肆', '伍'];
   const [countdown, setCountdown] = useState(5);
 

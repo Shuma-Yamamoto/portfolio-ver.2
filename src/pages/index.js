@@ -15,11 +15,11 @@ export default function Home() {
   return (
     <>
       <Header />
-      {/* {countdown === 0 && (
+      {countdown === 0 && (
         <div id="container">
           <p>テスト</p>
         </div>
-      )} */}
+      )}
     </>
   )
 }
