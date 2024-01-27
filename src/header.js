@@ -14,25 +14,16 @@ export default function Top() {
     return () => clearInterval(countdownInterval);
   }, []);
 
-  useEffect(() => {
-    const createLine = (position) => {
-      const line = document.createElement('div');
-      line.className = styles['line' + position];
-      document.body.appendChild(line);
-    };
-    ['Top', 'Bottom', 'Right', 'Left'].forEach(createLine);
-  }, []);
-
   return (
     <>
       {/* <Div100vh> */}
         <header id={styles.header}>
+          <div className={styles.border} />
           {countdown > 0 ? (
             <p className={styles.kanjiNumbers}>{kanjiNumbers[countdown]}</p>
           ) : (
             <>
-              <div className={styles.border} />
-              <div className={styles.fadeIn}>
+              <div className={styles.fadeInContainer}>
                 <div className={styles.nameContainer}>
                   <p className={styles.nameKanji}>脩&nbsp;眞</p>
                   <p className={styles.nameRoman}>shuma.</p>

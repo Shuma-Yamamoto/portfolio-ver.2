@@ -97,10 +97,11 @@
   bottom: 2%;
   right: 1%;
   left: 1%;
+  animation: fadeIn 5s ease-in;
 }
 
 /* フェードイン */
-.fadeIn {
+.fadeInContainer {
   animation: fadeIn 1.5s ease-in;
 }
 
