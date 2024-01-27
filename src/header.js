@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Div100vh from 'react-div-100vh'
 import styles from './header.module.css';
 
 export default function Top() {
@@ -24,7 +25,7 @@ export default function Top() {
 
   return (
     <>
-      <header id={styles.header}>
+      <Div100vh id={styles.header}>
         {countdown > 0 ? (
           <p className={styles.kanjiNumbers}>{kanjiNumbers[countdown]}</p>
         ) : (
@@ -41,7 +42,7 @@ export default function Top() {
             </svg>
           </div>
         )}
-      </header>
+      </Div100vh>
     </>
   )
 }
