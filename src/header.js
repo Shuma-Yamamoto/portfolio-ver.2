@@ -25,7 +25,7 @@ export default function Top() {
 
   return (
     <>
-      <Div100vh>
+      {/* <Div100vh> */}
         <div id={styles.header}>
           {countdown > 0 ? (
             <p className={styles.kanjiNumbers}>{kanjiNumbers[countdown]}</p>
@@ -46,7 +46,7 @@ export default function Top() {
             </div>
           )}
         </div>
-      </Div100vh>
+      {/* </Div100vh> */}
     </>
   )
 }
