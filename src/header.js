@@ -25,7 +25,7 @@ export default function Top() {
 
   return (
     <>
-      {/* <Div100vh> */}
+      <Div100vh>
         <header id={styles.header}>
           <div className={styles.border} />
           {countdown > 0 ? (
@@ -47,7 +47,7 @@ export default function Top() {
             </>
           )}
         </header>
-      {/* </Div100vh> */}
+      </Div100vh>
     </>
   )
 }
